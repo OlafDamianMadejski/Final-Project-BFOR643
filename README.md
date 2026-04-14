@@ -1,6 +1,13 @@
 # Final-Project-BFOR643
 Showcase of our final project presenting a dive into NIST's Incident Response Framework with demonstration using Wireshark and Altoro Mutual.
 
+# Table of Contents
+
+1. [Project Introduction](#Project-Introduction)
+2. [Project Relevance](#Project-Relevance)
+3. [Methodology](#Methodology)
+
+
 ## Project Introduction
 We will be using a PCAP analysis of Altoro Mutual. Altoro Mutual is a fictitious banking website developed by IBM. The website uses HTTP for the purpose of demonstrating vulnerabilities and sharpening incident response reactions and techniques. For the purpose of this project, we will be going over protocols, identifying attack vectors, implementing incident response lessons, and taking steps to minimize our attack surface.  
 
