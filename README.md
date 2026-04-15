@@ -6,6 +6,7 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
 1. [Project Introduction](#Project-Introduction)
 2. [Project Relevance](#Project-Relevance)
 3. [Methodology](#Methodology)
+4. [Attack Vector: XSS](#Attack-Vector:-XSS)
 
 
 ## Project Introduction
@@ -43,7 +44,32 @@ Breaking down the actual PCAP we have the packet list pane in the top showing th
 <img width="1572" height="921" alt="image" src="https://github.com/user-attachments/assets/675ba00f-f736-495c-a8d1-863c216701df" />
 
 
-## Wireshark and Altoro Mutual (1)
+## Attack Vector: XSS
+
+Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts are inserted into otherwise legitimate and trusted websites. It happens when a web application accepts user input and includes it in its output without properly validating or encoding it. This allows an attacker to send harmful code to other users, which their browsers then execute as if it came from a trusted source.
+
+
+Looking to the image below, we see a short and simple HTML injected script ​
+
+
+*Injected script 1 = <script>alert('XSS')</script>*​
+
+<img width="780" height="381" alt="image" src="https://github.com/user-attachments/assets/3f912862-19ea-46f5-b89d-d4714a564999" />
+
+​
+
+This inputted text of HTML forces the website to execute and have a pop-up box show for the user on your screen.
+
+Looking at the image below, we see a script with a clickable link that populates on the users page resulting in them getting rick-rolled.​
+
+​
+
+*Injected script 2 = <a href="https://tinyurl.com/bddvm824">Click me</a>*
+
+<img width="776" height="604" alt="image" src="https://github.com/user-attachments/assets/176c86e6-1df9-4f64-8928-a0b5f6917a42" />
+
+There are others ways to perform this attack but the general goal is to get malicious code to run on another users browser by tricking the browser into accepting injected code. This can also result in stolen cookies, hijacked sessions, and modifying the webpage. 
+
 
 
 ## Conclusion
