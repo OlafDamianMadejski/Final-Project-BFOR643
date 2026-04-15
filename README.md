@@ -30,17 +30,18 @@ The current incident response life cycle model by NIST from 2025 in Revision 3 o
 
 Wireshark is an open source tool used to capture network traffic passively. The tool is free to use and very simple to navigate. For the purposes of this project, I have selected to listen on my ethernet connection, open up Altoro Mutual on my web browser, inject my code into input fields on the web application and anything else I needed to include in the project, and stopped the capture. Next comes the filtering which was straight forward and includes helpful prompt completion as seen in the Images
 
+
+*Available network adapters for listening*
+<img width="1205" height="440" alt="image" src="https://github.com/user-attachments/assets/3fef282c-15f9-463e-9c52-7bae87af2c2b" />
+
 *Filtering by Ip address*
 <img width="975" height="300" alt="image" src="https://github.com/user-attachments/assets/a8b1c4d5-4efc-44cb-8e7a-45ed6f16e346" />
 
 
-*Available network adapters for listening*
-<img width="975" height="300" alt="image" src="https://github.com/user-attachments/assets/951007c3-51da-47eb-8c18-62cbe8fcdfcc" />
-
-
 Breaking down the actual PCAP we have the packet list pane in the top showing the number of the packet, time, source, destination, protocol, length, an do the information, basically a quick summary. The left pane shows the entire packet partitioned by OSI layer and then the hex dump and ASCII in the right pane.
 
-<img width="975" height="283" alt="image" src="https://github.com/user-attachments/assets/140264b5-7696-40d0-b7a9-789548cdaf1b" />
+<img width="1572" height="921" alt="image" src="https://github.com/user-attachments/assets/675ba00f-f736-495c-a8d1-863c216701df" />
+
 
 ## Wireshark and Altoro Mutual (1)
 
