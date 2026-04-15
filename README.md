@@ -98,19 +98,9 @@ As we dive deeper into Packet 84, we see in the HTTP space of the packet that we
 <img width="1241" height="736" alt="image" src="https://github.com/user-attachments/assets/131588cd-ca04-4d07-8b2f-f9d2e9aa3e0a" />
 
 ​
-You can also bring out the cookie with the script linked at image 3
 
 
-*Image 3*
 
-*Injected Script*
-
-```
-<script> alert(document.cookie); </script>
-```
-
-
-<img width="685" height="667" alt="image" src="https://github.com/user-attachments/assets/b50f2f7d-b239-43b7-9d5b-1f9b8d853584" />
 
 
 This gets more complicated once you obtain a different users session ID, but this would be very difficult if the website uses HTTPS and more so if it sanitizes user input.​
@@ -134,6 +124,18 @@ Most applications built with modern frameworks and tools such as React, Angular,
 
 ​Session hijacking is the act of gaining someone’s unique session ID and making the server believe that its yours can make the server treat you as that authenticated user.
 
+Image 1 shows a my session ID that alerted onto my screen after injecting the code shown into the search field on Altoro Mutual.
+
+*Image 1*
+
+*Injected Script*
+
+```
+<script> alert(document.cookie); </script>
+```
+
+
+<img width="685" height="667" alt="image" src="https://github.com/user-attachments/assets/b50f2f7d-b239-43b7-9d5b-1f9b8d853584" />
 ​
 
 
