@@ -147,7 +147,7 @@ Most applications built with modern frameworks and tools such as React, Angular,
 
 ​Session hijacking is the act of gaining someone’s unique session ID and making the server believe that its yours can make the server treat you as that authenticated user.
 
-Image 1 shows a my session ID that alerted onto my screen after injecting the code shown into the search field on Altoro Mutual.
+Image 1 shows my session ID that alerted onto my screen after injecting the code shown into the search field on Altoro Mutual.
 
 *Image 1*
 
