@@ -52,7 +52,11 @@ Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts
 Looking to the image below, we see a short and simple HTML injected script ​
 
 
-*Injected script 1 = <script>alert('XSS')</script>*​
+*Injected script 1*
+
+```
+<script>alert('XSS')</script>
+```
 
 <img width="780" height="381" alt="image" src="https://github.com/user-attachments/assets/3f912862-19ea-46f5-b89d-d4714a564999" />
 
@@ -64,7 +68,11 @@ Looking at the image below, we see a script with a clickable link that populates
 
 ​
 
-*Injected script 2 = <a href="https://tinyurl.com/bddvm824">Click me</a>*
+*Injected script 2*
+
+```
+<a href="https://tinyurl.com/bddvm824">Click me</a>
+```
 
 <img width="776" height="604" alt="image" src="https://github.com/user-attachments/assets/176c86e6-1df9-4f64-8928-a0b5f6917a42" />
 
