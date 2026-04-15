@@ -6,7 +6,7 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
 1. [Project Introduction](#Project-Introduction)
 2. [Project Relevance](#Project-Relevance)
 3. [Methodology](#Methodology)
-4. [Attack Vector: XSS](#Attack-Vector:-XSS)
+4. [Attack Vector: XSS](#Attack-Vector-XSS)
 
 
 ## Project Introduction
