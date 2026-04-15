@@ -7,6 +7,7 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
 2. [Project Relevance](#Project-Relevance)
 3. [Methodology](#Methodology)
 4. [Attack Vector: XSS](#Attack-Vector-XSS)
+   -  [PCAP Dive](#PCAP-Dive)
 
 
 ## Project Introduction
@@ -78,6 +79,36 @@ Looking at the image below, we see a script with a clickable link that populates
 
 There are others ways to perform this attack but the general goal is to get malicious code to run on another users browser by tricking the browser into accepting injected code. This can also result in stolen cookies, hijacked sessions, and modifying the webpage. 
 
+### PCAP Dive
+
+Looking at the PCAP capture (image 1), you can see that there are two packets sent by my machine and two sent from Altoro. In the short snippet in the “Info” column of packets 84 and 30675, you can see the code snippets from  the earlier screenshots. Obviously, you wouldn’t see that if this was over HTTPS because of the encryption, but that’s exactly what Altoro was created for.
+
+*Image 1*
+
+<img width="1246" height="187" alt="image" src="https://github.com/user-attachments/assets/074c5ed7-6c3c-4604-9931-e94d8c789c28" />
+
+
+As we dive deeper into Packet 84, we see in the HTTP space of the packet that we have the injected code in plaintext and the Cookie for my unique session.
+
+
+*Packet 84*​
+
+<img width="1241" height="736" alt="image" src="https://github.com/user-attachments/assets/131588cd-ca04-4d07-8b2f-f9d2e9aa3e0a" />
+
+​
+You can also bring out the cookie with the script linked at image 3
+
+
+*Image 3*
+
+*Injected Script*
+
+```
+<script> alert(document.cookie); </script>
+```
+
+
+<img width="685" height="667" alt="image" src="https://github.com/user-attachments/assets/b50f2f7d-b239-43b7-9d5b-1f9b8d853584" />
 
 
 ## Conclusion
