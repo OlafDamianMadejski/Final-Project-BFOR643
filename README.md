@@ -8,6 +8,8 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
 3. [Methodology](#Methodology)
 4. [Attack Vector: XSS](#Attack-Vector-XSS)
    -  [PCAP Dive](#PCAP-Dive)
+   -  [Minimizing Attack Surface](#Minimizing-Attack-Surface)
+5. [Attack Vector: Session Hijacking](#Attack-Vector-Session-Hijacking)
 
 
 ## Project Introduction
@@ -109,6 +111,30 @@ You can also bring out the cookie with the script linked at image 3
 
 
 <img width="685" height="667" alt="image" src="https://github.com/user-attachments/assets/b50f2f7d-b239-43b7-9d5b-1f9b8d853584" />
+
+
+This gets more complicated once you obtain a different users session ID, but this would be very difficult if the website uses HTTPS and more so if it sanitizes user input.​
+
+​
+
+Most applications built with modern frameworks such as React, Angular, and Polymer have fewer vulnerable avenues for XSS to exist in but ensure security measures such as variable validation and sanitization. Validation and sanitization include restraining user input to expected formats for the input fields such as only numbers or letters and restricting special characters and converting them into safe representations so that the browser does not interpret them as HTML, JavaScript or any executable piece.​
+
+
+### Minimizing Attack Surface
+
+*Angular, React, Polymer*
+
+<img width="782" height="187" alt="image" src="https://github.com/user-attachments/assets/9f593ce1-f9d0-4f72-86b2-3477d6881f24" />
+
+
+Most applications built with modern frameworks and tools such as React, Angular, and Polymer have fewer vulnerable avenues for XSS to exist in but ensure security measures such as variable validation and sanitization. Validation and sanitization include restraining user input to expected formats for the input fields such as only numbers or letters and restricting special characters and converting them into safe representations so that the browser does not interpret them as HTML, JavaScript or any executable piece.​
+​
+
+## Attack Vector: Session Hijacking
+
+​Session hijacking is the act of gaining someone’s unique session ID and making the server believe that its yours can make the server treat you as that authenticated user.
+
+​
 
 
 ## Conclusion
