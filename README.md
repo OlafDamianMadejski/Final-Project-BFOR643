@@ -38,7 +38,7 @@ Wireshark is an open source tool used to capture network traffic passively. The 
 <img width="975" height="300" alt="image" src="https://github.com/user-attachments/assets/a8b1c4d5-4efc-44cb-8e7a-45ed6f16e346" />
 
 
-Breaking down the actual PCAP we have the packet list pane in the top showing the number of the packet, time, source, destination, protocol, length, an do the information, basically a quick summary. The left pane shows the entire packet partitioned by OSI layer and then the hex dump and ASCII in the right pane.
+Breaking down the actual PCAP we have the packet list pane in the top showing the number of the packet, time, source, destination, protocol, length, and a quick summary. The left pane shows the entire packet partitioned by OSI layer and then the hex dump and ASCII in the right pane.
 
 <img width="1572" height="921" alt="image" src="https://github.com/user-attachments/assets/675ba00f-f736-495c-a8d1-863c216701df" />
 
