@@ -11,6 +11,8 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
    -  [Minimizing Attack Surface](#Minimizing-Attack-Surface)
 5. [Attack Vector: Session Hijacking](#Attack-Vector-Session-Hijacking)
 6. [Atack Vector: HTTP/S](#Attack-Vector-HTTPS)
+7. [Conclusion](#Conclusion)
+8. [Sources](Sources)
 
 
 ## Project Introduction
@@ -202,23 +204,30 @@ The image above shows a filter done on the captuyre looking for any packets with
 ​<img width="659" height="427" alt="image" src="https://github.com/user-attachments/assets/0da27ba5-ef47-419a-9d7b-c24dfee82701" />
 
 
-<br>
-​
-Image 2 is an example of encrypted login on a different web app through HTTPS
+
 
 <br>
-
-
-
-
-
-
-
-
-
-
 
 
 ## Conclusion
 
+This project demonstrates how modern web application vulnerabilities can be exploited across multiple layers of the attack surface by analyzing three key attack vectors: Cross-Site Scripting (XSS), insecure HTTP communication, and session hijacking. Through the XSS example, the project highlights how improper input validation allows attackers to inject malicious JavaScript, enabling client-side exploitation such as cookie theft. The analysis of HTTP versus HTTPS emphasizes the importance of encrypted communication, showing how the absence of TLS exposes sensitive data, including session identifiers, to interception. Building on this, the session hijacking demonstration illustrates how attackers can leverage stolen session cookies to impersonate authenticated users without needing credentials.
+
+These attack vectors collectively reinforce the importance of a layered security approach aligned with the NIST Incident Response lifecycle, particularly within the Identify, Detect, and Respond phases. By identifying vulnerabilities (XSS, lack of HTTPS), detecting insecure transmissions and malicious activity (via tools like Wireshark), and responding through mitigation strategies (input validation, HTTPS enforcement, secure cookie attributes), the project showcases how organizations can reduce risk and strengthen their security posture. Overall, this work underscores how seemingly small misconfigurations can chain together into critical security failures, resulting in full session compromise and unauthorized access.
+
+
 ## Sources
+
+
+1. https://owasp.org/www-community/attacks/xss/
+2. https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+3. https://owasp.org/www-community/attacks/Session_hijacking_attack
+4. https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf
+5. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf
+6. https://datatracker.ietf.org/doc/html/rfc2616
+7. https://datatracker.ietf.org/doc/html/rfc1945 
+
+
+
+
+
