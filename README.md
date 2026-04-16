@@ -10,6 +10,7 @@ Showcase of our final project presenting a dive into NIST's Incident Response Fr
    -  [PCAP Dive](#PCAP-Dive)
    -  [Minimizing Attack Surface](#Minimizing-Attack-Surface)
 5. [Attack Vector: Session Hijacking](#Attack-Vector-Session-Hijacking)
+6. [Atack Vector: HTTP/S](#Attack-Vector-HTTPS)
 
 
 ## Project Introduction
@@ -159,7 +160,58 @@ Image 1 shows my session ID that alerted onto my screen after injecting the code
 
 
 <img width="685" height="667" alt="image" src="https://github.com/user-attachments/assets/b50f2f7d-b239-43b7-9d5b-1f9b8d853584" />
+
+
 ​
+
+Image 2 shows a captured JSessionID which is a session cookie used by Java-based web apps.o mitigate this, simply use HTTPS as a default, no reason to not use HTTPS for a public web app unless you want to open yourself up to vulnerability and no severance package from your employer.
+
+
+*Image 2*
+
+*Injected Script*
+
+```
+<script> alert(document.cookie); </script>
+```
+
+
+​<img width="1277" height="1108" alt="image" src="https://github.com/user-attachments/assets/4619b41c-4acf-48bf-885c-2a6c89b9356f" />
+
+
+## Atack Vector: HTTP/S
+
+
+HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that operates over Transport Layer Security (TLS), providing confidentiality, integrity, and authenticity for data in transit. During the TLS handshake, the client and server negotiate cryptographic parameters and establish a shared symmetric session key using asymmetric (public key) cryptography. The server presents an X.509 digital certificate, which is validated by the client against trusted Certificate Authorities (CAs) to ensure the server’s identity. Once the handshake is complete, all application-layer data is encrypted using symmetric encryption, ensuring efficient and secure communication. This prevents eavesdropping, man-in-the-middle attacks, and unauthorized data modification, as intercepted traffic cannot be decrypted without access to the negotiated session keys.​
+
+​
+
+Image 1 is an example of a plaintext login through altoro through HTTP
+<br>
+
+<img width="1278" height="1391" alt="image" src="https://github.com/user-attachments/assets/ec546cdd-709a-4014-9cc4-851804a47125" />
+<br>
+
+The image above shows a filter done on the captuyre looking for any packets with a source or destination address of 65.61.137.117 for Altoro Mutuals public IP address. The result brough me to packet 240 where it shows the username and password for the account of John Smith. The image below is a closer view of the contents.
+<br>
+
+​<img width="659" height="427" alt="image" src="https://github.com/user-attachments/assets/0da27ba5-ef47-419a-9d7b-c24dfee82701" />
+
+<br>
+​
+
+Image 2 is an example of encrypted login on a different web app through HTTPS
+<br>
+
+
+
+
+
+
+
+
+
+
 
 
 ## Conclusion
