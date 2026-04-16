@@ -187,20 +187,25 @@ HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that operates
 ​
 
 Image 1 is an example of a plaintext login through altoro through HTTP
+
 <br>
 
 <img width="1278" height="1391" alt="image" src="https://github.com/user-attachments/assets/ec546cdd-709a-4014-9cc4-851804a47125" />
+
 <br>
 
 The image above shows a filter done on the captuyre looking for any packets with a source or destination address of 65.61.137.117 for Altoro Mutuals public IP address. The result brough me to packet 240 where it shows the username and password for the account of John Smith. The image below is a closer view of the contents.
+
+
 <br>
 
 ​<img width="659" height="427" alt="image" src="https://github.com/user-attachments/assets/0da27ba5-ef47-419a-9d7b-c24dfee82701" />
 
+
 <br>
 ​
-
 Image 2 is an example of encrypted login on a different web app through HTTPS
+
 <br>
 
 
